@@ -275,17 +275,18 @@ class Cli {
           choices: this.vehicles.map((vehicle) => {
             return {
               name: `${vehicle.vin} -- ${vehicle.make} ${vehicle.model}`,
-              value: vehicle,
+              value: vehicle
             };
           }),
         },
       ])
       .then((answers) => {
-        if(truck == answers.value){
+        if(truck == answers.vehicleToTow){
           console.log(`The truck cannot tow itself`);
           this.performActions();
         }else{
-          truck.tow(answers.value);
+          truck.tow(answers.vehicleToTow);
+          this.performActions();
         }
       });
   }
@@ -390,7 +391,6 @@ class Cli {
               if(this.vehicles[i] instanceof Motorbike){
                 const selectedMotorbike: Motorbike = this.vehicles[i] as Motorbike;
                 selectedMotorbike.wheelie();
-                return;
               }else{
                 console.log(`Only motorbikes can wheelie!`);
               }
