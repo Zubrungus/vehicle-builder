@@ -188,7 +188,7 @@ class Cli {
         this.performActions();
       });
   }
-
+  
   // method to create a motorbike
   createMotorbike(): void {
     inquirer

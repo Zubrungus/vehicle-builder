@@ -47,7 +47,6 @@ class Truck extends Vehicle implements AbleToTow {
   }
 
   tow(vehicle: Truck | Motorbike | Car): void {
-    //console.log(vehicle);
     const towedMake: string = vehicle.make;
     const towedModel: string = vehicle.model;
 
