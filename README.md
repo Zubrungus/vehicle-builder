@@ -13,7 +13,7 @@ Application to create vehicle objects, which can be a car, truck, or motorbike. 
 ## Installation
 Clone repo to local machine.
 ## Usage
-Navigate to repo folder with CLI of choice and type "npm run start"
+Navigate to repo folder with CLI of choice and type "npm i" then "npm run start"
 ## License
 This software is covered under the GNU GPL V3 license
 ## Questions
